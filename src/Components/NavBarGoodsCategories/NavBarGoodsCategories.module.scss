@@ -1,0 +1,35 @@
+@import "./../../scss/SCSSConstants.scss";
+
+.navWrapper {
+    max-width: 1920px;
+    overflow: hidden;
+    margin: 0 auto;
+
+    padding: 0 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navList {
+    font-size: 18px;
+    @include adaptive-value("font-size", 18, 15);
+    line-height: 21px;
+    margin: 0 auto;
+    max-width: 1302px;
+    justify-content: space-between;
+    li {
+        a {
+            display: inline-block;
+            height: 100%;
+            padding: 28px 0px 25px 0;
+            @include adaptive-value("padding-top", 25, 15);
+            @include adaptive-value("padding-bottom", 25, 15);
+            box-sizing: border-box;
+            border-bottom: solid 3px transparent;
+
+            &:hover {
+                color: $white;
+            }
+        }
+        margin: 0 5px;
+    }
+}

@@ -1,0 +1,236 @@
+@import "./Common/SCSS/nullStyle.scss";
+@import "./scss/SCSSConstants.scss";
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("fonts/Gilroy-Regular.eot");
+    src: local("fonts/Gilroy Regular"), local("fonts/Gilroy-Regular"),
+        url("fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Gilroy-Regular.woff2") format("woff2"), url("fonts/Gilroy-Regular.woff") format("woff"),
+        url("fonts/Gilroy-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fonts/Gilroy";
+    src: url("fonts/Gilroy-Bold.eot");
+    src: local("fonts/Gilroy Bold"), local("fonts/Gilroy-Bold"),
+        url("fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Gilroy-Bold.woff2") format("woff2"),
+        url("fonts/Gilroy-Bold.woff") format("woff"), url("fonts/Gilroy-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fonts/Gilroy";
+    src: url("fonts/Gilroy-Black.eot");
+    src: local("fonts/Gilroy Black"), local("fonts/Gilroy-Black"),
+        url("fonts/Gilroy-Black.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Gilroy-Black.woff2") format("woff2"), url("fonts/Gilroy-Black.woff") format("woff"),
+        url("fonts/Gilroy-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fonts/Gilroy";
+    src: url("fonts/Gilroy-Semibold.eot");
+    src: local("fonts/Gilroy Semibold"), local("fonts/Gilroy-Semibold"),
+        url("fonts/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Gilroy-Semibold.woff2") format("woff2"), url("fonts/Gilroy-Semibold.woff") format("woff"),
+        url("fonts/Gilroy-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fonts/Gilroy";
+    src: url("fonts/Gilroy-Medium.eot");
+    src: local("fonts/Gilroy Medium"), local("fonts/Gilroy-Medium"),
+        url("fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Gilroy-Medium.woff2") format("woff2"), url("fonts/Gilroy-Medium.woff") format("woff"),
+        url("fonts/Gilroy-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fonts/Gilroy";
+    src: url("fonts/Gilroy-Extrabold.eot");
+    src: local("fonts/Gilroy Extrabold"), local("fonts/Gilroy-Extrabold"),
+        url("fonts/Gilroy-Extrabold.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Gilroy-Extrabold.woff2") format("woff2"), url("fonts/Gilroy-Extrabold.woff") format("woff"),
+        url("fonts/Gilroy-Extrabold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fonts/Gilroy";
+    src: url("fonts/Gilroy-Heavy.eot");
+    src: local("fonts/Gilroy Heavy"), local("fonts/Gilroy-Heavy"),
+        url("fonts/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Gilroy-Heavy.woff2") format("woff2"), url("fonts/Gilroy-Heavy.woff") format("woff"),
+        url("fonts/Gilroy-Heavy.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+.App {
+    min-height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Gilroy";
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(360deg, #211f20 0%, #44403f 100%);
+}
+main {
+    flex: 1 1 auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+input {
+    color: $white;
+}
+.categoriesWrapper .swiper .swiper-slide {
+    width: 325px;
+    margin: 0 10px;
+    @include adaptive-value("width", 325, 250);
+}
+.categoriesWrapper .swiper-wrapper {
+    padding: 30px 0 50px 0;
+    @include adaptive-value("padding-bottom", 50, 20);
+    overflow: visible;
+}
+
+.swiper {
+    padding: 10px 0;
+    overflow: visible;
+}
+
+.sliderWrapper .swiper-wrapper {
+    padding: 0;
+}
+
+.sliderWrapper .swiper .swiper-slide {
+    margin: 0;
+}
+// .navBarInner.swiper .swiper-slide {
+//     @include adaptive-value("width", 325, 250);
+// }
+// .navBarInner .swiper-slide {
+//     width: auto;
+// }
+// .navBarInner .swiper {
+//     max-width: 1302px;
+//     margin: 0 auto;
+//     display: flex;
+//     justify-content: center;
+// }
+.navBarInner .swiper-wrapper {
+}
+.swiper-slide li .active {
+    border-bottom: solid 3px $greenDeep;
+}
+
+@keyframes ldio-oqvkl7tdmkg {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.ldio-oqvkl7tdmkg div {
+    left: 94px;
+    top: 48px;
+    position: absolute;
+    animation: ldio-oqvkl7tdmkg linear 1s infinite;
+    background: $greenSoft;
+    width: 12px;
+    height: 24px;
+    border-radius: 6px / 12px;
+    transform-origin: 6px 52px;
+}
+.ldio-oqvkl7tdmkg div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -0.9166666666666666s;
+    background: $greenSoft;
+}
+.ldio-oqvkl7tdmkg div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -0.8333333333333334s;
+    background: $greenSoft;
+}
+.ldio-oqvkl7tdmkg div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.75s;
+    background: $greenSoft;
+}
+.ldio-oqvkl7tdmkg div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.6666666666666666s;
+    background: $greenSoft;
+}
+.ldio-oqvkl7tdmkg div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.5833333333333334s;
+    background: $greenSoft;
+}
+.ldio-oqvkl7tdmkg div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.5s;
+    background: $greenSoft;
+}
+.ldio-oqvkl7tdmkg div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.4166666666666667s;
+    background: $greenSoft;
+}
+.ldio-oqvkl7tdmkg div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.3333333333333333s;
+    background: $greenSoft;
+}
+.ldio-oqvkl7tdmkg div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.25s;
+    background: $greenSoft;
+}
+.ldio-oqvkl7tdmkg div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.16666666666666666s;
+    background: $greenSoft;
+}
+.ldio-oqvkl7tdmkg div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.08333333333333333s;
+    background: $greenSoft;
+}
+.ldio-oqvkl7tdmkg div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+    background: $greenSoft;
+}
+.loadingio-spinner-spinner-mfdy2jyt2p9 {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+}
+.ldio-oqvkl7tdmkg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+}
+.ldio-oqvkl7tdmkg div {
+    box-sizing: content-box;
+}
